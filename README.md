@@ -9,4 +9,12 @@ extraídos mediante técnicas de scraping/crawling de sitios de dominio público
 
 * Utilizar una herramienta de diagramado como Google Draw o DIA para diseñar y especificar el flujo de datos y herramientas utilizadas
 
+El fichero xxxx de este repositorio contiene el diagrama solicitado. 
+En este diagrama se describe:
+- Como se obtienen los datos que vamos a cargar en la plataforma Hadoop 
+- Como se cargan los datos en Hadoop
+- Como se aplican las herramientas de análisis sobre los datos que residen en los nodos clúster de Hadoop
+
+
+
 
