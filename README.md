@@ -18,7 +18,7 @@ En este diagrama se representa:
 - Como se cargan los datos en Hadoop
 - Como se aplican las herramientas de análisis sobre los datos que residen en los nodos clúster de Hadoop
 
-###Obtención de los datos
+### Obtención de los datos
 
 - Fichero csv Airbnb
 - Fichero csv de noticias locales de Madrid. Crawling
@@ -26,10 +26,10 @@ En este diagrama se representa:
 - Fichero txt Eventos Culturales. Python
 - Etc
 
-###Carga de datos en Hadoop
+### Carga de datos en Hadoop
 - Cron para la carga de datos en hadoop y paso al HDFS
 
-###Análisis
+### Análisis
 
 
 
