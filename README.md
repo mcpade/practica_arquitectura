@@ -5,7 +5,7 @@
 *Diseñar, especificar y desplegar un datalake para el procesamiento de datos provenientes de fuentes de datos no estructurados extraídos mediante técnicas de scraping/crawling de sitios de dominio público.*
 
 Con un datalake se pretende centralizar datos de diferentes fuentes sobre los que ya después poder realizar análisis. La fuente principal será el dataset de Airbnb pero voy a enriquecer estos datos con otros obtenidos a través de Crawling y Scraping.
-Aunque aun no tenga claro cual será el proyecto final, de momento tomo como objetivo el análizar una serie de datos para ser capaz de determinar en tiempo real cual sería el mejor precio para un vivienda Airbnb en Madrid.
+Aunque aun no tenga claro cual será el proyecto final, de momento tomo como objetivo el análizar una serie de datos para ser capaz de determinar en tiempo real cual sería el mejor precio para un vivienda Airbnb en Madrid. Para ello además de los datos de Airbnb puedo usar datos de noticias de los diferentes barrios, puntos de interés cercanos a la vivienda, parkings, eventos previstos, etc...
 
 
 ## Parte 1
@@ -20,8 +20,9 @@ En este diagrama se representa:
 
 ### Obtención de los datos
 
-- Fichero csv Airbnb
-- Fichero csv de noticias locales de Madrid. Crawling
+- Fichero csv Airbnb. [Airbnb] (https://public.opendatasoft.com/explore/dataset/airbnb-listings/export/?disjunctive.host_verifications&disjunctive.amenities&disjunctive.features&q=Madrid&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQ09VTlQiLCJ5QXhpcyI6Imhvc3RfbGlzdGluZ3NfY291bnQiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiJyYW5nZS1jdXN0b20ifV0sInhBeGlzIjoiY2l0eSIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6IiIsInNvcnQiOiIiLCJzZXJpZXNCcmVha2Rvd24iOiJyb29tX3R5cGUiLCJjb25maWciOnsiZGF0YXNldCI6ImFpcmJuYi1saXN0aW5ncyIsIm9wdGlvbnMiOnsiZGlzanVuY3RpdmUuaG9zdF92ZXJpZmljYXRpb25zIjp0cnVlLCJkaXNqdW5jdGl2ZS5hbWVuaXRpZXMiOnRydWUsImRpc2p1bmN0aXZlLmZlYXR1cmVzIjp0cnVlfX19XSwidGltZXNjYWxlIjoiIiwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZX0%3D&location=16,41.38377,2.15774&basemap=jawg.streets)
+
+- Fichero csv de noticias locales de Madrid. Lo obtendré usando Crawling de esta dirección 
 - Fichero txt parking Madrid. Scrapy - Python
 - Fichero txt Eventos Culturales. Python
 - Etc
