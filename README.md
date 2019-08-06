@@ -26,8 +26,8 @@ Tendré que programar un cron diario que me permita descargarme los datos de las
 
 - Fichero csv de noticias locales de Madrid. Lo obtendré usando Crawling a esta dirección. [Noticias Locales Madrid](https://www.eldistrito.es/distritos/)
 
-- Fichero txt con datos de parkings de Madrid. Lo obtendré usando Scrapy 
-- Fichero txt Eventos Culturales. Python
+- Fichero txt con datos de parkings de Madrid. Lo obtendré realizando cunsultas a esta API de la EMT de Madrid 
+- Fichero txt Eventos Culturales. Lo obtendré realizando consultas a esta API de datos abiertos de Madrid
 - Etc
 
 ### Carga de datos en Hadoop
@@ -35,6 +35,17 @@ Tendré que programar un cron diario que me permita descargarme los datos de las
 
 ### Análisis
 
+## Parte 2
+
+*Crear un scraper en Google Collaboratory a partir de un API o de un crawler con scrapy, que descargue los datos a un archivo de formato estructurado*
+
+### Collaboratory 1. Dataset de Airbnb
+
+### Collaboratory 2. Crawling Noticas Locales Madrid
+
+### Collaboratory 3. Scraping. API de la EMT de Madrid
+
+### Collaboratory 4. Scraping API Datos Abiertos de Madrid
 
 
 
