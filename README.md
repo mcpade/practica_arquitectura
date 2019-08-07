@@ -46,13 +46,15 @@ Tendré que programar un cron diario que me permita descargarme los datos de las
 
 ## Parte 2
 
-*Crear un scraper en Google Collaboratory a partir de un API o de un crawler con scrapy, que descargue los datos a un archivo de formato estructurado*
+*Crear un scraper en Google Colaboratory a partir de un API o de un crawler con scrapy, que descargue los datos a un archivo de formato estructurado*
 
-### Collaboratory 1. Dataset de Airbnb
+### Colaboratory 1. Dataset de Airbnb
 
-### Collaboratory 2. Crawling Noticas Locales Madrid
+### Colaboratory 2. Crawling Noticas Locales Madrid
 
-### Collaboratory 3. Scraping. API de la EMT de Madrid
+### Colaboratory 3. Scraping. API de la EMT de Madrid
+
+Mediante el siguiente código en Python hago consultas a la API de la EMT de Madrid para conocer datos de aparcamientos municipales. Como resultado tendré un archivo "Parkings.csv" que contendrá los siguientes datos de cada aparcamiento: nombre, código postal, coordenadas geográficas y dirección
 
 - [Ver Scraping](https://colab.research.google.com/drive/1tlLzm6tJhjdMsp1QP98ArnjjmKL67ey8)
 
