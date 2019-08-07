@@ -24,7 +24,7 @@ Tendré que programar un cron diario que me permita descargarme los datos de las
 
 - Fichero csv Airbnb. [Airbnb](https://public.opendatasoft.com/explore/dataset/airbnb-listings/export/?disjunctive.host_verifications&disjunctive.amenities&disjunctive.features&q=Madrid&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQ09VTlQiLCJ5QXhpcyI6Imhvc3RfbGlzdGluZ3NfY291bnQiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiJyYW5nZS1jdXN0b20ifV0sInhBeGlzIjoiY2l0eSIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6IiIsInNvcnQiOiIiLCJzZXJpZXNCcmVha2Rvd24iOiJyb29tX3R5cGUiLCJjb25maWciOnsiZGF0YXNldCI6ImFpcmJuYi1saXN0aW5ncyIsIm9wdGlvbnMiOnsiZGlzanVuY3RpdmUuaG9zdF92ZXJpZmljYXRpb25zIjp0cnVlLCJkaXNqdW5jdGl2ZS5hbWVuaXRpZXMiOnRydWUsImRpc2p1bmN0aXZlLmZlYXR1cmVzIjp0cnVlfX19XSwidGltZXNjYWxlIjoiIiwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZX0%3D&location=16,41.38377,2.15774&basemap=jawg.streets)
 
-- Fichero csv de noticias locales de Madrid. Lo obtendré usando Crawling a esta dirección. [Noticias Locales Madrid](https://www.eldistrito.es/distritos/)
+- Fichero csv de noticias locales de Madrid. Lo obtendré usando Crawling en esta dirección. [Noticias Locales Madrid](https://www.eldistrito.es/distritos/)
 
 - Fichero txt con datos de parkings de Madrid. Lo obtendré realizando cunsultas a esta API de la EMT de Madrid 
 - Fichero txt Eventos Culturales. Lo obtendré realizando consultas a esta API de datos abiertos de Madrid
