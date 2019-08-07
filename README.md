@@ -52,6 +52,10 @@ Tendré que programar un cron diario que me permita descargarme los datos de las
 
 ### Colaboratory 2. Crawling Noticas Locales Madrid
 
+Mediante el siguiente Scrapy en Python voy a realizar un Crawling de una página de noticias locales de Madrid. Como resultado tendré un archivo "datanoticias.csv" que contendrá los siguientes datos de las noticias: fecha, distrito, titular
+
+- [Ver Crawling](https://colab.research.google.com/drive/1EoVTmGQbznHsgctedHsgZDgowXDXx1Px)
+
 ### Colaboratory 3. Scraping. API de la EMT de Madrid
 
 Mediante el siguiente código en Python hago consultas a la API de la EMT de Madrid para conocer datos de aparcamientos municipales. Como resultado tendré un archivo "Parkings.csv" que contendrá los siguientes datos de cada aparcamiento: nombre, código postal, coordenadas geográficas y dirección
