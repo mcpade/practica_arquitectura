@@ -21,6 +21,8 @@ En este diagrama se representa:
 - Como se cargan los datos en Hadoop
 - Como se aplican las herramientas de análisis sobre los datos que residen en los nodos clúster de Hadoop
 
+(Ver estos puntos dependiendo de como quede el diagrama)
+
 ### Obtención de los datos
 
 Tendré que programar un cron diario que me permita descargarme los datos de las diferentes fuentes:
@@ -29,9 +31,14 @@ Tendré que programar un cron diario que me permita descargarme los datos de las
 
 - Fichero csv de noticias locales de Madrid. Lo obtendré usando Crawling en esta dirección. [Noticias Locales Madrid](https://www.eldistrito.es/distritos/)
 
-- Fichero txt con datos de parkings de Madrid. Lo obtendré realizando cunsultas a esta API de la EMT de Madrid 
-- Fichero txt Eventos Culturales. Lo obtendré realizando consultas a esta API de datos abiertos de Madrid
-- Etc
+- Fichero txt con datos de parkings de Madrid. Lo obtendré realizando cunsultas a esta API de la EMT de Madrid. [API EMT Madrid](https://apidocs.emtmadrid.es/)
+
+- Fichero txt con Actividades Culturales y de Ocio Municipal en los próximos 100 dias. Lo obtendré realizando consultas a esta API de datos abiertos de Madrid. [API Datos abiertos Madrid](https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default)
+
+- Fichero txt con Monumentos de la Ciudad de Madrid. Lo obtendré realiznado consultas a la misma API anterior. [API Datos abiertos Madrid](https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default)
+
+- Fichero txt con los Museos de la Ciudad de Madrid. Lo obtendré realiznado consultas a la misma API anterior. [API Datos abiertos Madrid](https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default)
+
 
 ### Carga de datos en Hadoop
 - Cron para la carga de datos en hadoop y paso al HDFS
