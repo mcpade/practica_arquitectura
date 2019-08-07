@@ -38,6 +38,7 @@ Tendré que programar un cron diario que me permita descargarme los datos de las
 
 ### Carga de datos en Hadoop
 - Cron para la carga de datos en hadoop y paso al HDFS
+
 (Ver video y describir un poco los pasos, dibujar el cluster de Hadoop)
 
 ### Análisis
@@ -52,6 +53,8 @@ Tendré que programar un cron diario que me permita descargarme los datos de las
 ### Collaboratory 2. Crawling Noticas Locales Madrid
 
 ### Collaboratory 3. Scraping. API de la EMT de Madrid
+
+[Scraping](https://colab.research.google.com/drive/1tlLzm6tJhjdMsp1QP98ArnjjmKL67ey8)
 
 ### Collaboratory 4. Scraping API Datos Abiertos de Madrid
 
