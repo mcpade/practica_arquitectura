@@ -42,8 +42,10 @@ Tendré que programar un cron diario que me permita descargarme los datos de las
 
 ### Carga de datos en Hadoop
 - Cron para la carga de datos en hadoop y paso al HDFS
+(Ver video y describir un poco los pasos, dibujar el cluster de Hadoop)
 
 ### Análisis
+(Pendiente de las últimas clases)
 
 ## Parte 2
 
