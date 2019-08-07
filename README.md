@@ -7,6 +7,8 @@
 Con un datalake se pretende centralizar datos de diferentes fuentes sobre los que ya después poder realizar análisis. La fuente principal será el dataset de Airbnb pero voy a enriquecer estos datos con otros obtenidos a través de Crawling y Scraping.
 Aunque aun no tenga claro cual será el proyecto final, de momento tomo como objetivo el análizar una serie de datos para ser capaz de determinar en tiempo real cual sería el mejor precio para un vivienda Airbnb en Madrid. Para ello además de los datos de Airbnb puedo usar datos de noticias de los diferentes barrios, puntos de interés cercanos a la vivienda, parkings, eventos previstos, etc...
 
+(Añadir o corregir lo que realmente se termine poniendo)
+
 
 
 ## Parte 1
