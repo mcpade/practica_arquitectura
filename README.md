@@ -64,6 +64,10 @@ Mediante el siguiente código en Python hago consultas a la API de la EMT de Mad
 
 ### Collaboratory 4. Scraping API Datos Abiertos de Madrid
 
+Mediante el siguiente código en Python hago consultas a la API de Datos Abiertos de Madrid para conocer datos sobre:
+- **Actividades Culturales y de Ocio Municipal en los próximos 100 días**. Como resultado obtengo un archivo "actividades.csv" que contendrá los siguientes datos de las actividades: Fecha de inicio, Fecha de fin, Título de la actividad, Descripción de la actividad, Distrito, Latitud, Longitud
+- **Monumentos de la ciudad de Madrid**. Como resultado obtengo un archivo "monumentos.csv" que contendrá los siguientes datos de los monumentos: Titulo, Barrio, Distrito, Codigo Postal, Direccion, Latitud, Lontitud, Descripcion
+- **Museos de la ciudad de Madrid** Como resultado obtengo un archivo "museos.csv" qque contendrá los siguientes datos de los monumentos: Titulo, Barrio, Distrito, Codigo Postal, Direccion, Latitud, Lontitud, Descripcion
 - [Ver Scraping](https://colab.research.google.com/drive/15GBd3Z4aQHxVjWo4Fs11xcaEZkFyK_dm)
 
 
