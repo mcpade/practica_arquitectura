@@ -91,5 +91,33 @@ Mediante el siguiente código en Python hago consultas a la API de Datos Abierto
 - **Museos de la ciudad de Madrid** Como resultado obtengo un archivo "museos.csv" qque contendrá los siguientes datos de los monumentos: Titulo, Barrio, Distrito, Codigo Postal, Direccion, Latitud, Lontitud, Descripcion
 - [Ver Codigo](https://colab.research.google.com/drive/15GBd3Z4aQHxVjWo4Fs11xcaEZkFyK_dm)
 
+## Parte 3
+
+*Utilizar un proveedor de Cloud para montar un cluster de al menos 3 contenedores configurados correctamente*
+(PENDIENTE)
+
+## Parte 4
+
+*Subir los archivos extraídos durante la parte 2 al cluster de Hadoop e insertarlos en el HDFS. Indicar pasos necesarios para realizar esto, dependiendo de la opción elegida en el Sprint 3*
+
+(PENDIENTE)
+
+*Realizar la tarea de procesamiento de datos sobre los datos extraídos utilizando WordCount*
+
+(PENDIENTE)
+
+## Parte 5
+
+*Utilizar HIVE para insertar los datos extraídos durante el Sprint 2 y realizar queries con los mismos. Indicar los pasos y las decisiones de diseño respecto a cómo organizar los datos.*
+
+(PENDIENTE)
+
+
+
+
+
+
+
+
 
 
