@@ -54,21 +54,21 @@ Tendré que programar un cron diario que me permita descargarme los datos de las
 
 Mediante el siguiente Scrapy en Python voy a realizar un Crawling de una página de noticias locales de Madrid. Como resultado tendré un archivo "datanoticias.csv" que contendrá los siguientes datos de las noticias: fecha, distrito, titular
 
-- [Ver Crawling](https://colab.research.google.com/drive/1EoVTmGQbznHsgctedHsgZDgowXDXx1Px)
+- [Ver Código](https://colab.research.google.com/drive/1EoVTmGQbznHsgctedHsgZDgowXDXx1Px)
 
-### Colaboratory 3. Scraping. API de la EMT de Madrid
+### Colaboratory 3. API de la EMT de Madrid
 
 Mediante el siguiente código en Python hago consultas a la API de la EMT de Madrid para conocer datos de aparcamientos municipales. Como resultado tendré un archivo "Parkings.csv" que contendrá los siguientes datos de cada aparcamiento: nombre, código postal, coordenadas geográficas y dirección
 
-- [Ver Scraping](https://colab.research.google.com/drive/1tlLzm6tJhjdMsp1QP98ArnjjmKL67ey8)
+- [Ver Codigo](https://colab.research.google.com/drive/1tlLzm6tJhjdMsp1QP98ArnjjmKL67ey8)
 
-### Collaboratory 4. Scraping API Datos Abiertos de Madrid
+### Collaboratory 4. API Datos Abiertos de Madrid
 
 Mediante el siguiente código en Python hago consultas a la API de Datos Abiertos de Madrid para conocer datos sobre:
 - **Actividades Culturales y de Ocio Municipal en los próximos 100 días**. Como resultado obtengo un archivo "actividades.csv" que contendrá los siguientes datos de las actividades: Fecha de inicio, Fecha de fin, Título de la actividad, Descripción de la actividad, Distrito, Latitud, Longitud
 - **Monumentos de la ciudad de Madrid**. Como resultado obtengo un archivo "monumentos.csv" que contendrá los siguientes datos de los monumentos: Titulo, Barrio, Distrito, Codigo Postal, Direccion, Latitud, Lontitud, Descripcion
 - **Museos de la ciudad de Madrid** Como resultado obtengo un archivo "museos.csv" qque contendrá los siguientes datos de los monumentos: Titulo, Barrio, Distrito, Codigo Postal, Direccion, Latitud, Lontitud, Descripcion
-- [Ver Scraping](https://colab.research.google.com/drive/15GBd3Z4aQHxVjWo4Fs11xcaEZkFyK_dm)
+- [Ver Codigo](https://colab.research.google.com/drive/15GBd3Z4aQHxVjWo4Fs11xcaEZkFyK_dm)
 
 
 
