@@ -34,7 +34,8 @@ De momento como datos adicionales a los de Airbnb se me ha ocurrido usar datos d
 
 ### Obtención de datos 
 
-Tengo varias fuentes de datos y mediante una serie de tareas programadas (cron) en un servidor Ubuntu voy a ejecutar scripts en Python para obtener esos datos. Exepto los datos de las noticias que voy a obtenerlos de forma diaria el resto se obtendrán una vez por semana.
+Tengo las fuentes de datos anteriores y mediante una serie de tareas programadas (cron) en un servidor Ubuntu voy a ejecutar scripts en Python para obtener esos datos. Exepto los datos de las noticias que voy a sacarlos de forma diaria el resto se obtendrán una vez por semana.
+Estos scripts de Python generan una serie de ficheros csv con los datos. Para las noticias locales de Madrid se utilizará la técnica de Crawling y para el resto de datos utilizaré Scraping haciendo uso de APIs públicas.
 
 - Fichero csv Airbnb. [Airbnb](https://public.opendatasoft.com/explore/dataset/airbnb-listings/export/?disjunctive.host_verifications&disjunctive.amenities&disjunctive.features&q=Madrid&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQ09VTlQiLCJ5QXhpcyI6Imhvc3RfbGlzdGluZ3NfY291bnQiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiJyYW5nZS1jdXN0b20ifV0sInhBeGlzIjoiY2l0eSIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6IiIsInNvcnQiOiIiLCJzZXJpZXNCcmVha2Rvd24iOiJyb29tX3R5cGUiLCJjb25maWciOnsiZGF0YXNldCI6ImFpcmJuYi1saXN0aW5ncyIsIm9wdGlvbnMiOnsiZGlzanVuY3RpdmUuaG9zdF92ZXJpZmljYXRpb25zIjp0cnVlLCJkaXNqdW5jdGl2ZS5hbWVuaXRpZXMiOnRydWUsImRpc2p1bmN0aXZlLmZlYXR1cmVzIjp0cnVlfX19XSwidGltZXNjYWxlIjoiIiwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZX0%3D&location=16,41.38377,2.15774&basemap=jawg.streets). Lo obtengo a través de un cron programado en un servidor Ubuntu que ejecutará un scrip en python todos los domingos a las 00:00
 
@@ -49,10 +50,22 @@ Tengo varias fuentes de datos y mediante una serie de tareas programadas (cron) 
 - Fichero csv con los Museos de la Ciudad de Madrid. Lo obtendré realizando consultas a la misma API anterior. [API Datos abiertos Madrid](https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default)
 
 
-### Carga de datos en Hadoop
-- Cron para la carga de datos en hadoop y paso al HDFS
+Los ficheros csv que se vaya obteniendo se cargarán en un segmento del Cloud Storage de Google
 
-(Ver video y describir un poco los pasos, dibujar el cluster de Hadoop)
+
+## Carga de datos en Hadoop - Staging
+
+Al utilizar Hadoop en Cloud y el Cloud Storage la fase de Staging queda reducida únicamente a subir los ficheros csv al Cloud Storage. Los mismos scripts de Python que obtienen los datos se encargarán de guardarlos en el Cloud Storage y ya estará disponibles para HADOOP 
+
+## Hadoop
+
+En Google Cloud tendré un cluster de Hadoop con tres contenedores. Dentro de Hadoop se realizarán el procedimiento de limpieza de datos y el proceso que se encargue de la estimación temporal de precios (de momento será un simple Wordcount)
+
+## Limpieza de datos
+
+Los datos obtenidos a través de Crawling y Scraping ya vienen limpios pero el fichero de Airbnb si necesita una limpieza de datos. Tendremos un proceso dentro de Hadoop que se debe encargar de esta tarea
+
+## HIVE
 
 ### Análisis
 (Pendiente de las últimas clases)
