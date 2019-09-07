@@ -4,8 +4,11 @@
 
 *Diseñar, especificar y desplegar un datalake para el procesamiento de datos provenientes de fuentes de datos no estructurados extraídos mediante técnicas de scraping/crawling de sitios de dominio público.*
 
-Con un datalake se pretende centralizar datos de diferentes fuentes sobre los que ya después poder realizar análisis. La fuente principal será el dataset de Airbnb pero voy a enriquecer estos datos con otros obtenidos a través de Crawling y Scraping.
-Aunque aun no tenga claro cual será el proyecto final, de momento tomo como objetivo el análizar una serie de datos para ser capaz de determinar en tiempo real cual sería el mejor precio para un vivienda Airbnb en Madrid. Para ello además de los datos de Airbnb puedo usar datos de noticias de los diferentes barrios, localización de parkings, eventos culturales previstos, localización de monumentos y museos...
+El objetivo del diseño de este DataLake será tomar como entrada una serie de datos de un apartamento turístico de la ciudad de Madrid (dirección, nº dormitorios, nº baños, metros cuadrados, fotografias...) y mostrar de forma gráfica una evolución del precio estimado para el alquiler a dos meses vista.
+
+La fuente principal de datos será el dataset de Airbnb pero voy a enriquecer estos datos con otros obtenidos a través de Crawling y Scraping.
+
+
 
 ## Parte 1
 
@@ -17,6 +20,8 @@ En este diagrama se representa:
 - Como se obtienen los datos para cargarlos en Hadoop
 - ...............
 
+
+Aunque aun no tenga claro cual será el proyecto final, de momento tomo como objetivo el análizar una serie de datos para ser capaz de determinar en tiempo real cual sería el mejor precio para un vivienda Airbnb en Madrid. Para ello además de los datos de Airbnb puedo usar datos de noticias de los diferentes barrios, localización de parkings, eventos culturales previstos, localización de monumentos y museos...
 (Ver estos puntos dependiendo de como quede el diagrama)
 
 ### Obtención de los datos
