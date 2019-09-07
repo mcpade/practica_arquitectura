@@ -55,7 +55,8 @@ Los ficheros csv que se vaya obteniendo se cargarán en un segmento del Cloud St
 
 ## Carga de datos en Hadoop - Staging
 
-Al utilizar Hadoop en Cloud y el Cloud Storage la fase de Staging queda reducida únicamente a subir los ficheros csv al Cloud Storage. Los mismos scripts de Python que obtienen los datos se encargarán de guardarlos en el Cloud Storage y ya estará disponibles para HADOOP 
+Al utilizar Hadoop en Cloud y el Cloud Storage la fase de Staging queda reducida únicamente a subir los ficheros csv al Cloud Storage. Los mismos scripts de Python que obtienen los datos se encargarán de guardarlos en el Cloud Storage y ya estará disponibles para HADOOP.
+En el segmento de Cloud Storage tendré una directorio input donde se colocarán todos estos ficheros csv
 
 ## Hadoop
 
@@ -63,15 +64,20 @@ En Google Cloud tendré un cluster de Hadoop con tres contenedores. Dentro de Ha
 
 ## Limpieza de datos
 
-Los datos obtenidos a través de Crawling y Scraping ya vienen limpios pero el fichero de Airbnb si necesita una limpieza de datos. Tendremos un proceso dentro de Hadoop que se debe encargar de esta tarea
+Los datos obtenidos a través de Crawling y Scraping ya vienen limpios pero el fichero de Airbnb si necesita una limpieza de datos. Tendremos un proceso dentro de Hadoop que se debe encargar de esta tarea y que luego almacenará el fichero ya limpio de Airbnb en el Cloud Storage dentro del directorio input
 
 ## HIVE
 
 Voy a montar también un HIVE en la nube de Google. La idea es que los datos csv que se han obtenido se acaben cargando en tablas de HIVE de forma que el/los proceso/s que se encargue/n de calcuar los precios pueda/n realizar consultas SQL a HIVE. Por ejemplo que me ocurre que si el piso del que quiero saber los precios estimados está en el barrio SOL se pueda realizar una consulta SQL para ver cuales son las actividades de ocio programadas en ese barrio en los dos meses siguientes o si hay parking municipales en ese barrio, etc...
 
+La carga de los datos en las tablas de HIVE de los ficheros csv se puede hacer desde el Cloud Storage. La carga de las noticias locales se hará de forma diaria a las 0:30 y el resto de datos los domingos a las 01:00
 
-### Análisis
-(Pendiente de las últimas clases)
+
+## JAR
+
+El proceso JAR (que no sé de momento si será uno o varios) se encargará de realizar todo el procesamiento y las consultas necesarias a HIVE para ser capaz de hacer la estimación de precios a dos meses vista. Tomará como entrada los datos que se aporten del apartamento del usuario y el resultado se representaría de forma gráfica con alguna herramienta de visualización.
+De momento en esta práctica este proceso va a realizar solo un wordcount de los ficheros y almacenará el resultado en una carpeta output del Cloud Storage
+
 
 ## Parte 2
 
