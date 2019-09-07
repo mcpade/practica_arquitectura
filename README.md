@@ -21,6 +21,8 @@ Además utilizaré HIVE también en Cloud para tener todos los datos extraidos d
 
 De momento como datos adicionales a los de Airbnb se me ha ocurrido usar datos de noticias de los diferentes barrios, localización de parkings, eventos culturales previstos, localización de monumentos y museos.
 
+Para esta arquitectura de momento los datos del apartamento será un fichero que se subiría al Cloud Storage de forma manual pero la idea final sería tener un interfaz web en el que el usuario pudiera introducir los datos y que mediente la API REST de Google Cloud se enviaran esos datos y se lanzaran las tareas de procesamiento.
+
 
 ### Fuentes de datos:
 
@@ -60,11 +62,8 @@ En el segmento de Cloud Storage tendré una directorio input donde se colocarán
 
 ## Hadoop
 
-En Google Cloud tendré un cluster de Hadoop con tres contenedores. Dentro de Hadoop se realizarán el procedimiento de limpieza de datos y el proceso que se encargue de la estimación temporal de precios (de momento será un simple Wordcount)
+En Google Cloud tendré un cluster de Hadoop con tres contenedores. Dentro de Hadoop se realizarán el/los proceso/s que se encargue/n de la estimación temporal de precios (de momento será un simple Wordcount)
 
-## Limpieza de datos
-
-Los datos obtenidos a través de Crawling y Scraping ya vienen limpios pero el fichero de Airbnb si necesita una limpieza de datos. Tendremos un proceso dentro de Hadoop que se debe encargar de esta tarea y que luego almacenará el fichero ya limpio de Airbnb en el Cloud Storage dentro del directorio input
 
 ## HIVE
 
