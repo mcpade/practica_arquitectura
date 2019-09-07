@@ -15,20 +15,14 @@ La fuente principal de datos será el dataset de Airbnb pero voy a enriquecer es
 *Utilizar una herramienta de diagramado como Google Draw o DIA para diseñar y especificar el flujo de datos y herramientas utilizadas*
 
 El fichero "Diagrama Practica" de este repositorio contiene el diagrama solicitado. 
-En este diagrama se representa:
-- De donde se obtienen los datos que vamos a cargar en la plataforma Hadoop 
-- Como se obtienen los datos para cargarlos en Hadoop
-- ...............
+
+Utilizaré un Cluster de Hadoop en Google Cloud que se encargará de procesar datos extraidos de Airbnb y de una serie de ficheros adicionales que conseguiré usando Crawling y Scraping. El objetivo de este procesamiento será dar de forma gráfica una estimación del precio de alquilé a dos meses vista para un apartamento turístico en Madrid conociendo detalles del apartamento como dirección, nº de dormitorios, nº baños, metros cuadrados, fotografías..
+Además utilizaré HIVE también en Cloud para tener todos los datos extraidos dentro de tablas a las que poder realizar consultas SQL cuando estemos realizando el procesamiento y análisis de esos datos.
+
+De momento como datos adicionales a los de Airbnb se me ha ocurrido usar datos de noticias de los diferentes barrios, localización de parkings, eventos culturales previstos, localización de monumentos y museos.
 
 
-Aunque aun no tenga claro cual será el proyecto final, de momento tomo como objetivo el análizar una serie de datos para ser capaz de determinar en tiempo real cual sería el mejor precio para un vivienda Airbnb en Madrid. Para ello además de los datos de Airbnb puedo usar datos de noticias de los diferentes barrios, localización de parkings, eventos culturales previstos, localización de monumentos y museos...
-(Ver estos puntos dependiendo de como quede el diagrama)
-
-### Obtención de los datos
-
-Tengo varias fuentes de datos y mediante una serie de tareas programadas (cron) en un servidor Ubuntu voy a ejecutar scripts en Python para obtener esos datos
-
-#### Fuentes de datos:
+### Fuentes de datos:
 
 - [Airbnb](https://public.opendatasoft.com/explore/dataset/airbnb-listings/export/?disjunctive.host_verifications&disjunctive.amenities&disjunctive.features&q=Madrid&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQ09VTlQiLCJ5QXhpcyI6Imhvc3RfbGlzdGluZ3NfY291bnQiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiJyYW5nZS1jdXN0b20ifV0sInhBeGlzIjoiY2l0eSIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6IiIsInNvcnQiOiIiLCJzZXJpZXNCcmVha2Rvd24iOiJyb29tX3R5cGUiLCJjb25maWciOnsiZGF0YXNldCI6ImFpcmJuYi1saXN0aW5ncyIsIm9wdGlvbnMiOnsiZGlzanVuY3RpdmUuaG9zdF92ZXJpZmljYXRpb25zIjp0cnVlLCJkaXNqdW5jdGl2ZS5hbWVuaXRpZXMiOnRydWUsImRpc2p1bmN0aXZlLmZlYXR1cmVzIjp0cnVlfX19XSwidGltZXNjYWxlIjoiIiwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZX0%3D&location=16,41.38377,2.15774&basemap=jawg.streets)
 
@@ -38,15 +32,17 @@ Tengo varias fuentes de datos y mediante una serie de tareas programadas (cron) 
 
 - [API Datos abiertos Madrid](https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default)
 
-#### Obtención de datos 
+### Obtención de datos 
+
+Tengo varias fuentes de datos y mediante una serie de tareas programadas (cron) en un servidor Ubuntu voy a ejecutar scripts en Python para obtener esos datos. Exepto los datos de las noticias que voy a obtenerlos de forma diaria el resto se obtendrán una vez por semana.
 
 - Fichero csv Airbnb. [Airbnb](https://public.opendatasoft.com/explore/dataset/airbnb-listings/export/?disjunctive.host_verifications&disjunctive.amenities&disjunctive.features&q=Madrid&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQ09VTlQiLCJ5QXhpcyI6Imhvc3RfbGlzdGluZ3NfY291bnQiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiJyYW5nZS1jdXN0b20ifV0sInhBeGlzIjoiY2l0eSIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6IiIsInNvcnQiOiIiLCJzZXJpZXNCcmVha2Rvd24iOiJyb29tX3R5cGUiLCJjb25maWciOnsiZGF0YXNldCI6ImFpcmJuYi1saXN0aW5ncyIsIm9wdGlvbnMiOnsiZGlzanVuY3RpdmUuaG9zdF92ZXJpZmljYXRpb25zIjp0cnVlLCJkaXNqdW5jdGl2ZS5hbWVuaXRpZXMiOnRydWUsImRpc2p1bmN0aXZlLmZlYXR1cmVzIjp0cnVlfX19XSwidGltZXNjYWxlIjoiIiwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZX0%3D&location=16,41.38377,2.15774&basemap=jawg.streets). Lo obtengo a través de un cron programado en un servidor Ubuntu que ejecutará un scrip en python todos los domingos a las 00:00
 
-- Fichero csv de noticias locales de Madrid. Lo obtendré a través de un cron programado en un servidor Ubuntu que ejecutará un spript todos los dias a las 01:00 y que se encargará de realizar Crawling en esta dirección. [Noticias Locales Madrid](https://www.eldistrito.es/distritos/)
+- Fichero csv de noticias locales de Madrid. Lo obtendré a través de un cron programado en un servidor Ubuntu que ejecutará un spript todos los dias a las 00:00 y que se encargará de realizar Crawling en esta dirección. [Noticias Locales Madrid](https://www.eldistrito.es/distritos/)
 
-- Fichero csv con datos de parkings de Madrid. Lo obtendré a través de un cron programado en un servidor Ubuntu que ejecutará un script todos los dias a las 01:30 y que realizará cunsultas a esta API de la EMT de Madrid. [API EMT Madrid](https://apidocs.emtmadrid.es/)
+- Fichero csv con datos de parkings de Madrid. Lo obtengo a través de un cron programado en un servidor Ubuntu que ejecutará un scrip en python todos los domingos a las 00:00 y que realizará cunsultas a esta API de la EMT de Madrid. [API EMT Madrid](https://apidocs.emtmadrid.es/)
 
-- Fichero csv con Actividades Culturales y de Ocio Municipal en los próximos 100 dias. Lo obtendré a través de un cron programado en un servidor Ubuntu que ejecutará un script todos los dias a las 02:00 y que realizará consultas a esta API de datos abiertos de Madrid. [API Datos abiertos Madrid](https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default)
+- Fichero csv con Actividades Culturales y de Ocio Municipal en los próximos 100 dias. Lo obtengo a través de un cron programado en un servidor Ubuntu que ejecutará un scrip en python todos los domingos a las 00:00 y que realizará consultas a esta API de datos abiertos de Madrid. [API Datos abiertos Madrid](https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default)
 
 - Fichero csv con Monumentos de la Ciudad de Madrid. Lo obtendré realizando consultas a la misma API anterior. [API Datos abiertos Madrid](https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default)
 
