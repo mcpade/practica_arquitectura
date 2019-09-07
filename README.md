@@ -16,7 +16,7 @@ La fuente principal de datos será el dataset de Airbnb pero voy a enriquecer es
 
 El fichero "Diagrama Practica" de este repositorio contiene el diagrama solicitado. 
 
-Utilizaré un Cluster de Hadoop en Google Cloud que se encargará de procesar datos extraidos de Airbnb y de una serie de ficheros adicionales que conseguiré usando Crawling y Scraping. El objetivo de este procesamiento será dar de forma gráfica una estimación del precio de alquilé a dos meses vista para un apartamento turístico en Madrid conociendo detalles del apartamento como dirección, nº de dormitorios, nº baños, metros cuadrados, fotografías..
+Utilizaré un Cluster de Hadoop en Google Cloud que se encargará de procesar datos extraidos de Airbnb y de una serie de ficheros adicionales que conseguiré usando Crawling y Scraping. El objetivo de este procesamiento será dar de forma gráfica una estimación del precio de alquilé a dos meses vista para un apartamento turístico en Madrid, conociendo detalles del apartamento como dirección, nº de dormitorios, nº baños, metros cuadrados, fotografías..
 Además utilizaré HIVE también en Cloud para tener todos los datos extraidos dentro de tablas a las que poder realizar consultas SQL cuando estemos realizando el procesamiento y análisis de esos datos.
 
 De momento como datos adicionales a los de Airbnb se me ha ocurrido usar datos de noticias de los diferentes barrios, localización de parkings, eventos culturales previstos, localización de monumentos y museos.
