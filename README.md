@@ -67,6 +67,9 @@ Los datos obtenidos a través de Crawling y Scraping ya vienen limpios pero el f
 
 ## HIVE
 
+Voy a montar también un HIVE en la nube de Google. La idea es que los datos csv que se han obtenido se acaben cargando en tablas de HIVE de forma que el/los proceso/s que se encargue/n de calcuar los precios pueda/n realizar consultas SQL a HIVE. Por ejemplo que me ocurre que si el piso del que quiero saber los precios estimados está en el barrio SOL se pueda realizar una consulta SQL para ver cuales son las actividades de ocio programadas en ese barrio en los dos meses siguientes o si hay parking municipales en ese barrio, etc...
+
+
 ### Análisis
 (Pendiente de las últimas clases)
 
