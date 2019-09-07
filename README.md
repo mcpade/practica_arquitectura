@@ -21,7 +21,7 @@ Además utilizaré HIVE también en Cloud para tener todos los datos extraidos d
 
 De momento como datos adicionales a los de Airbnb se me ha ocurrido usar datos de noticias de los diferentes barrios, localización de parkings, eventos culturales previstos, localización de monumentos y museos.
 
-Para esta arquitectura de momento los datos del apartamento será un fichero que se subiría al Cloud Storage de forma manual pero la idea final sería tener un interfaz web en el que el usuario pudiera introducir los datos y que mediente la API REST de Google Cloud se enviaran esos datos y se lanzaran las tareas de procesamiento.
+Para esta arquitectura de momento los datos del apartamento será un fichero que se subirá al Cloud Storage de forma manual, pero la idea final sería tener un interfaz web en el que el usuario pudiera introducir los datos y que mediante la API REST de Google Cloud se enviaran esos datos y se lanzaran las tareas de procesamiento.
 
 
 ### Fuentes de datos:
