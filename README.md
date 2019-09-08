@@ -138,6 +138,15 @@ Le doy un nombre al Proyecto: "MiProyectoEjemplo" y hago click en Crear
 
 ![Paso 2b](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_2b_GCP.png)
 
+#### Paso 3
+
+En el menú de GCP buscamos la opción DataProc y entramos en Cluster
+
+![Paso 3](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3_GCP.png)
+
+#### Paso 4
+
+Lo siguiente será la creación del Cluster, para ello hacemos click en Crear Cluster
 
 
 ## Parte 4
