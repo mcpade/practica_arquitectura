@@ -165,6 +165,19 @@ Nodos (mínimo 2): 3 (estos son los nodos slaves)
 ![Paso 4b](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_4b_GCP.png)
 
 
+Tras esto ya podré ver mi cluster creado:
+
+![Paso 4c](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_4c_GCP.png)
+
+#### Paso 5
+
+A continuación voy a crear las reglas de cortafuegos o firewall. GCP funciona a través de los puertos 8088 y 8970
+
+En el menú de GCP buscamos la opción Red de VPC y entramos en Reglas de cortafuegos
+
+![Paso 5](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_5_GCP.png)
+
+
 ## Parte 4
 
 *Subir los archivos extraídos durante la parte 2 al cluster de Hadoop e insertarlos en el HDFS. Indicar pasos necesarios para realizar esto, dependiendo de la opción elegida en el Sprint 3*
