@@ -122,9 +122,11 @@ Para montar el cluster de Haddop en Cloud uso GCP (Google Cloud Computing) Datap
 
 Tengo ya una cuenta de google y me he dado de alta en https://cloud.google.com/ 
 
-- Paso 1
+#### Paso 1
 
 Entramos en esta dirección https://console.cloud.google.com/getting-started y hacemos click en Compute Engine:
+
+![Paso 1](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso 1 GCP.png)
 
 
 
