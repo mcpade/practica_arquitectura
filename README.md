@@ -128,6 +128,16 @@ Entramos en esta dirección https://console.cloud.google.com/getting-started y h
 
 ![Paso 1](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_1_GCP.png)
 
+#### Paso 2
+
+Lo siguiente será crear un proyecto nuevo haciendo en click en Nuevo Proyecto
+
+![Paso 2](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_2_GCP.png)
+
+Le doy un nombre al Proyecto: MiProyectoEjemplo y hago click en Crear
+
+![Pas 2](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_2_1_GCP.png)
+
 
 
 ## Parte 4
