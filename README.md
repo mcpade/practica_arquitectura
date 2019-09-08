@@ -86,23 +86,10 @@ De momento en esta práctica este proceso va a realizar solo un wordcount de los
 
 El Dataset de Airbnb lo tenemos en esta dirección [Airbnb](https://public.opendatasoft.com/explore/dataset/airbnb-listings/export/?disjunctive.host_verifications&disjunctive.amenities&disjunctive.features&q=Madrid&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQ09VTlQiLCJ5QXhpcyI6Imhvc3RfbGlzdGluZ3NfY291bnQiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiJyYW5nZS1jdXN0b20ifV0sInhBeGlzIjoiY2l0eSIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6IiIsInNvcnQiOiIiLCJzZXJpZXNCcmVha2Rvd24iOiJyb29tX3R5cGUiLCJjb25maWciOnsiZGF0YXNldCI6ImFpcmJuYi1saXN0aW5ncyIsIm9wdGlvbnMiOnsiZGlzanVuY3RpdmUuaG9zdF92ZXJpZmljYXRpb25zIjp0cnVlLCJkaXNqdW5jdGl2ZS5hbWVuaXRpZXMiOnRydWUsImRpc2p1bmN0aXZlLmZlYXR1cmVzIjp0cnVlfX19XSwidGltZXNjYWxlIjoiIiwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZX0%3D&location=16,41.38377,2.15774&basemap=jawg.streets)
 
-Podemos escoger entre bajarnos una versión resumida de 14.780 registros o el dataset completo. Para esta práctica voy a utilizar la versión reducida. Podemos bajarnos el archivo directamente desde este enlace y luego subirlo al Cloud Storage. De cara a una automatización en el futuro el código python para bajarse este archivo se muestra en este Colaboratory 
+Podemos escoger entre bajarnos una versión resumida de 14.780 registros o el dataset completo. Para esta práctica voy a utilizar la versión reducida. Podemos bajarnos el archivo directamente desde este enlace y luego subirlo al Cloud Storage. De cara a una automatización en el futuro el código python para bajarse este archivo se muestra en este Colaboratory: 
 
-```
-import urllib.request
+- [Ver Código](https://colab.research.google.com/drive/1kcGH65fr6VqOjbSucdFaLpxjiC_dzzM5)
 
-#Caso de que queramos tener la versión reducida
-#link = "https://public.opendatasoft.com/explore/dataset/airbnb-listings/download/?format=csv&disjunctive.host_verifications=true&disjunctive.amenities=true&disjunctive.features=true&q=Madrid&timezone=Europe/Berlin&use_labels_for_header=true"
-
-#Caso que queramos tener la versión completa
-link = "https://public.opendatasoft.com/explore/dataset/airbnb-listings/download/?format=csv&timezone=Europe/Berlin&use_labels_for_header=true"
-
-nfichero = "airbnb.csv"
-frespuesta = urllib.request.urlopen(link)
-fichero = open(nfichero,"wb")
-fichero.write(frespuesta.read())
-fichero.close()
-```
 
 ### Colaboratory 2. Crawling Noticas Locales Madrid
 
