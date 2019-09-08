@@ -130,7 +130,7 @@ Entramos en esta dirección https://console.cloud.google.com/getting-started y h
 
 #### Paso 2
 
-Lo siguiente será crear un proyecto nuevo haciendo en click en Nuevo Proyecto
+Lo siguiente será crear un proyecto nuevo haciendo click en Nuevo Proyecto
 
 ![Paso 2](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_2_GCP.png)
 
@@ -140,7 +140,7 @@ Le doy un nombre al Proyecto: "MiProyectoEjemplo" y hago click en Crear
 
 #### Paso 3
 
-En el menú de GCP buscamos la opción DataProc y entramos en Cluster
+En el menú de GCP buscamos la opción DataProc y entramos en Clústeres
 
 ![Paso 3](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3_GCP.png)
 
