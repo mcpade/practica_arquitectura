@@ -57,7 +57,9 @@ Los ficheros csv que se vayan obteniendo se cargarán en un segmento del Cloud S
 
 ## Carga de datos en Hadoop - Staging
 
-Al utilizar Hadoop en Cloud y el Cloud Storage la fase de Staging queda reducida únicamente a subir los ficheros csv al Cloud Storage. Los mismos scripts de Python que obtienen los datos se encargarán de guardarlos en el Cloud Storage y ya estará disponibles para HADOOP.
+Al utilizar Hadoop en Cloud y el Cloud Storage la fase de Staging queda reducida únicamente a subir los ficheros csv al Cloud Storage. Los mismos scripts de Python que obtienen los datos se encargarán en esta práctica de guardarlos en el Cloud Storage y ya estará disponibles para HADOOP.
+
+Para un proyecto final habría que meter una fase más antes de la carga de los ficheros en el Cloud Storage. Esta fase sería la de limpieza datos de forma que una vez estén subidos a HADDOP ya tengamos estos ficheros en los formatos adecuados y perfectamente preparados para el procesamiento.
 
 
 ## Hadoop
@@ -93,7 +95,8 @@ Podemos escoger entre bajarnos una versión resumida de 14.780 registros o el da
 
 ### Colaboratory 2. Crawling Noticas Locales Madrid
 
-Mediante el siguiente Scrapy en Python voy a realizar un Crawling de una página de noticias locales de Madrid. Como resultado tendré un archivo "datanoticias.csv" que contendrá los siguientes datos de las noticias: fecha, distrito, titular
+Mediante el siguiente Scrapy en Python voy a realizar un Crawling de una página de noticias locales de Madrid. Como resultado tendré un archivo "datanoticias.csv" que contendrá los siguientes datos de las noticias: fecha, distrito, titular.
+En principio para la prática me quedaré solo con las 32 primeras noticias
 
 - [Ver Código](https://colab.research.google.com/drive/1EoVTmGQbznHsgctedHsgZDgowXDXx1Px)
 
