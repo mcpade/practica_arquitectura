@@ -148,6 +148,18 @@ En el menú de GCP buscamos la opción DataProc y entramos en Clústeres
 
 Lo siguiente será la creación del Cluster, para ello hacemos click en Crear Cluster
 
+![Paso 4](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_4_GCP.png)
+
+A continuación relleno los datos del cluster que quiero crear:
+
+Región: europe-west1  (para que esté físicamente lo más cercano posible)
+Modo del clúster: Estándar
+Nodo Maestro: Le pongo 4 CPU con 15 GB
+Nodos de trabajo: Les pongo 2 CPU con 8 GB   (de momento no se va a nececitar mucho procesamiento)
+Nodos (mínimo 2): 3 (estos son los nodos slaves)
+
+![Paso 4b](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_4b_GCP.png)
+
 
 ## Parte 4
 
