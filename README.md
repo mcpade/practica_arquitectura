@@ -117,7 +117,12 @@ Mediante el siguiente código en Python hago consultas a la API de Datos Abierto
 ## Parte 3
 
 *Utilizar un proveedor de Cloud para montar un cluster de al menos 3 contenedores configurados correctamente*
-(PENDIENTE)
+
+Para montar el cluster de Haddop en Cloud uso GCP (Google Cloud Computing) Dataproc.
+
+En el siguiente Colabory explico los pasos seguidos para montar un cluster formado por un nodo maestro y tres nodos slaves
+
+
 
 ## Parte 4
 
