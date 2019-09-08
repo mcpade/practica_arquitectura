@@ -95,7 +95,7 @@ Podemos escoger entre bajarnos una versión resumida de 14.780 registros o el da
 
 ### Colaboratory 2. Crawling Noticas Locales Madrid
 
-Mediante el siguiente Scrapy en Python voy a realizar un Crawling de una página de noticias locales de Madrid. Como resultado tendré un archivo "datanoticias.csv" que contendrá los siguientes datos de las noticias: fecha, distrito, titular.
+Mediante el siguiente código en Python voy a realizar un Crawling de una página de noticias locales de Madrid. Como resultado tendré un archivo "datanoticias.csv" que contendrá los siguientes datos de las noticias: fecha, distrito, titular.
 En principio para la prática me quedaré solo con las 32 primeras noticias
 
 - [Ver Código](https://colab.research.google.com/drive/1EoVTmGQbznHsgctedHsgZDgowXDXx1Px)
@@ -123,7 +123,9 @@ Mediante el siguiente código en Python hago consultas a la API de Datos Abierto
 
 *Subir los archivos extraídos durante la parte 2 al cluster de Hadoop e insertarlos en el HDFS. Indicar pasos necesarios para realizar esto, dependiendo de la opción elegida en el Sprint 3*
 
-(PENDIENTE)
+Al utilizar arquitectura Cloud para Hadoop la fase de staging se reduce a la subida de datos a un segmento de Cloud Storage. En esta práctica dentro de los propios Colaboratory (se pueden consultar en la Parte 2) que se usan para extraer los datos se termina subiendo al Cloud Storage de Google usando la API de Python
+
+Muestro a continuación una imagen donde se ve como quedan subidos los diferentes archivos csv en mi segmento del Cloud Storage
 
 *Realizar la tarea de procesamiento de datos sobre los datos extraídos utilizando WordCount*
 
