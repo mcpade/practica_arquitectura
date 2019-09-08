@@ -126,7 +126,7 @@ Tengo ya una cuenta de google y me he dado de alta en https://cloud.google.com/
 
 Entramos en esta dirección https://console.cloud.google.com/getting-started y hacemos click en Compute Engine:
 
-![Paso 1](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso 1 GCP.png)
+![Paso 1](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_1_GCP.png)
 
 
 
