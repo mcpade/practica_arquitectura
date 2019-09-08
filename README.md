@@ -123,7 +123,7 @@ Mediante el siguiente código en Python hago consultas a la API de Datos Abierto
 
 *Subir los archivos extraídos durante la parte 2 al cluster de Hadoop e insertarlos en el HDFS. Indicar pasos necesarios para realizar esto, dependiendo de la opción elegida en el Sprint 3*
 
-Al utilizar arquitectura Cloud para Hadoop la fase de staging se reduce a la subida de datos a un segmento de Cloud Storage. En esta práctica dentro de los propios Colaboratory (se pueden consultar en la Parte 2) que se usan para extraer los datos se termina subiendo al Cloud Storage de Google usando la API de Python
+Al utilizar arquitectura Cloud para Hadoop la fase de staging se reduce a la subida de datos a un segmento de Cloud Storage. En esta práctica dentro de los propios Colaboratory  que se usan para extraer los datos se termina subiendo al Cloud Storage de Google usando la API de Python (se pueden consultar en la Parte 2)
 
 Muestro a continuación una imagen donde se ve como quedan subidos los diferentes archivos csv en mi segmento del Cloud Storage. También está subida en este repositorio
 
