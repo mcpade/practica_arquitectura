@@ -136,7 +136,7 @@ Lo siguiente será crear un proyecto nuevo haciendo en click en Nuevo Proyecto
 
 Le doy un nombre al Proyecto: "MiProyectoEjemplo" y hago click en Crear
 
-![Paso 2]
+![Paso 2b](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_2b_GCP.png)
 
 
 
