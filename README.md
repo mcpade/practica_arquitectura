@@ -171,11 +171,31 @@ Tras esto ya podré ver mi cluster creado:
 
 #### Paso 5
 
-A continuación voy a crear las reglas de cortafuegos o firewall. GCP funciona a través de los puertos 8088 y 8970
+A continuación voy a crear las reglas de cortafuegos o firewall. GCP funciona a través de los puertos 8088 y 8970 (voy a abrir ya de camino también el 10000 para HIVE que usaré posteriormente
 
 En el menú de GCP buscamos la opción Red de VPC y entramos en Reglas de cortafuegos
 
 ![Paso 5](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_5_GCP.png)
+
+Damos a Crear Regla de Cortafuegos
+
+![Paso 5b](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_5b_GCP.png)
+
+Y rellenamos los datos correspondientes a esta regla:
+
+Nombre: abrir-hadoop-casa
+
+Descripción: Cortafuegos para entrar en yarn, hdfs y hive
+
+Destinos: Todas las instancias de la red
+
+Filtro de origen: Intervalos de IPs
+
+Intervalos de IPs de origen: Mi IP Pública local/32
+
+Protocolos y puertos:  tcp:8088, 9870, 10000
+
+![Paso 5c](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_5c_GCP.png)
 
 
 ## Parte 4
