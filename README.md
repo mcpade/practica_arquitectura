@@ -125,9 +125,9 @@ Mediante el siguiente código en Python hago consultas a la API de Datos Abierto
 
 Al utilizar arquitectura Cloud para Hadoop la fase de staging se reduce a la subida de datos a un segmento de Cloud Storage. En esta práctica dentro de los propios Colaboratory (se pueden consultar en la Parte 2) que se usan para extraer los datos se termina subiendo al Cloud Storage de Google usando la API de Python
 
-Muestro a continuación una imagen donde se ve como quedan subidos los diferentes archivos csv en mi segmento del Cloud Storage
+Muestro a continuación una imagen donde se ve como quedan subidos los diferentes archivos csv en mi segmento del Cloud Storage. También está subida en este repositorio
 
-![Imagen](https://drive.google.com/file/d/1x0rkbVq51WnAct35umdbHGv_up2XbFb3/view?usp=sharing)
+- [Segmento Cloud Storage](https://drive.google.com/file/d/1j3wOPOMKehYlUeEn-KJjBsEkkaXNhw8O/view?usp=sharing)
 
 *Realizar la tarea de procesamiento de datos sobre los datos extraídos utilizando WordCount*
 
