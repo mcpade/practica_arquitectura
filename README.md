@@ -86,8 +86,7 @@ De momento en esta práctica este proceso va a realizar solo un wordcount de los
 
 El Dataset de Airbnb lo tenemos en esta dirección [Airbnb](https://public.opendatasoft.com/explore/dataset/airbnb-listings/export/?disjunctive.host_verifications&disjunctive.amenities&disjunctive.features&q=Madrid&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJjb2x1bW4iLCJmdW5jIjoiQ09VTlQiLCJ5QXhpcyI6Imhvc3RfbGlzdGluZ3NfY291bnQiLCJzY2llbnRpZmljRGlzcGxheSI6dHJ1ZSwiY29sb3IiOiJyYW5nZS1jdXN0b20ifV0sInhBeGlzIjoiY2l0eSIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6IiIsInNvcnQiOiIiLCJzZXJpZXNCcmVha2Rvd24iOiJyb29tX3R5cGUiLCJjb25maWciOnsiZGF0YXNldCI6ImFpcmJuYi1saXN0aW5ncyIsIm9wdGlvbnMiOnsiZGlzanVuY3RpdmUuaG9zdF92ZXJpZmljYXRpb25zIjp0cnVlLCJkaXNqdW5jdGl2ZS5hbWVuaXRpZXMiOnRydWUsImRpc2p1bmN0aXZlLmZlYXR1cmVzIjp0cnVlfX19XSwidGltZXNjYWxlIjoiIiwiZGlzcGxheUxlZ2VuZCI6dHJ1ZSwiYWxpZ25Nb250aCI6dHJ1ZX0%3D&location=16,41.38377,2.15774&basemap=jawg.streets)
 
-Podemos escoger entre bajarnos una versión resumida de 14.780 registros o el dataset completo. Para este proyecto habría que tener el dataset completo y filtrar para la cuidad de Madrid.
-El código python para bajarse este archivo podría ser el siguiente. 
+Podemos escoger entre bajarnos una versión resumida de 14.780 registros o el dataset completo. Para esta práctica voy a utilizar la versión reducida. Podemos bajarnos el archivo directamente desde este enlace y luego subirlo al Cloud Storage. De cara a una automatización en el futuro el código python para bajarse este archivo se muestra en este Colaboratory 
 
 ```
 import urllib.request
