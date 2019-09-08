@@ -198,6 +198,34 @@ Protocolos y puertos:  tcp:8088, 9870, 10000
 ![Paso 5c](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_5c_GCP.png)
 
 
+#### Paso 6
+
+Voy a comprobar que puedo acceder al cluster a través de la IP del master
+
+Para encontrar la IP del master tenemos que entrar dentro del cluster y hacer click en Instancias de VM
+
+![Paso 6](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_6_GCP.png)
+
+Aquí podemos ver la máquina que funciona como master y los tres slaves. Debemos entrar dentro del master
+
+![Paso 6b](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_6b_GCP.png)
+
+En la sección de Interfaces de red encontramos la IP externa del master
+
+![Paso 6c](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_6c_GCP.png)
+
+
+Podemos acceder a través de:
+http://IP_externa_master:8088
+
+![Paso 6d](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_6d_GCP.png)
+
+http://IP_externa_master:9870
+
+![Paso 6e](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_6e_GCP.png)
+
+
+
 ## Parte 4
 
 *Subir los archivos extraídos durante la parte 2 al cluster de Hadoop e insertarlos en el HDFS. Indicar pasos necesarios para realizar esto, dependiendo de la opción elegida en el Sprint 3*
