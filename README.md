@@ -389,6 +389,8 @@ Una vez que ya tengo todos los datos introducidos se pueden realizar consultas. 
 
 `SELECT a.titulo  FROM actividades a where a.distrito='Retiro';`
 
+![Paso_4_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_4_HIVE.png)
+
 
 
 
