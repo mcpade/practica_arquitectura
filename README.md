@@ -287,6 +287,13 @@ Podemos bajarnos el resultado para ver el contenido
 ![Paso_3b_Wordcount](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3b_Wordcount.png)
 
 
+El mismo procesamiento lo puedo realizar para el resto de ficheros .csv
+
+![Paso_3c_Wordcount](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3c_Wordcount.png)
+
+![Paso_3d_Wordcount](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3d_Wordcount.png)
+
+
 
 
 
