@@ -281,6 +281,11 @@ Podemos ver que el resultado obtenido se ha guardado en la carpeta airbnb_result
 
 ![Paso_3_Wordcount](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3_Wordcount.png)
 
+Podemos bajarnos el resultado para ver el contenido
+
+
+![Paso_3b_Wordcount](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3b_Wordcount.png)
+
 
 
 
