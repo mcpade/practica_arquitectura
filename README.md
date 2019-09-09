@@ -252,7 +252,7 @@ Paso a crear la tarea, para ello damos a ENVIAR TAREA
 
 ![Paso_2_Wordcount](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_2_Wordcount.png)
 
-Y rellenamos los datos de la Tarea:
+Y rellenamos los datos de la Tarea pulsando al final en Enviar
 
 ID de tarea: WordCount_Airbnb
 
@@ -265,8 +265,13 @@ Tipo de tarea: Hadoop
 Clase principal o jar: file:////usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar 
 
 Argumentos:   wordcount 
+
               gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/airbnb.csv   (fichero que está en el Google                                                                                               Storage)
+              
               gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/output/airbnb_result    (resultado)
+              
+![Paso_2b_Wordcount](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_2b_Wordcount.png)              
+              
 
 ## Parte 5
 
