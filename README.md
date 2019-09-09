@@ -314,7 +314,7 @@ Lo primero que voy a hacer es entrar por SSH desde GCP en la máquina con HIVE y
 
 ![Paso_1b_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_1b_HIVE.png)
 
-Para lanzar el cliente beeline ejecuto
+Para lanzar el cliente beeline ejecuto:
 
 `beeline -u jdbc:hive2://localhost:10000`
 
@@ -352,6 +352,33 @@ airbnb.csv
 ![Paso_2_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_2_HIVE.png)
 
 ![Paso_2b_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_2b_HIVE.png)
+
+#### Paso 3
+
+A continuación habría que cargar el contenido de los .csv en las tablas creadas en el paso anterior. Esta carga la voy a realizar en la práctica desde el cliente beeline pero en producción habría que tener un procedimiento mediante el cual se cargaran estos datos de forma automática y periódica. Por ejemplo, podría tener un equipo en el que podría instalar PyHIVE para poder conectarme a esta maquina HIVE del GCP. En ese equipo ya podría programar una tarea que se ejecutara de forma periódica y que usando usando PyHIVE se conectara al HIVE y ejecutara las queries de carga de datos
+
+`LOAD DATA INPATH 'gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/actividades.csv' OVERWRITE INTO TABLE actividades;`
+
+![Paso_3_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3_HIVE.png)
+
+`LOAD DATA INPATH 'gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/monumentos.csv' OVERWRITE INTO TABLE monumentos;`
+
+![Paso_3b_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3b_HIVE.png)
+
+`LOAD DATA INPATH 'gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/museos.csv' OVERWRITE INTO TABLE museos;`
+
+![Paso_3c_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3c_HIVE.png)
+
+`LOAD DATA INPATH 'gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/parking.csv' OVERWRITE INTO TABLE parking;`
+
+![Paso_3d_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3d_HIVE.png)
+
+`LOAD DATA INPATH 'gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/datanoticias.csv' OVERWRITE INTO TABLE datanoticias;`
+
+
+
+
+
 
 
 
