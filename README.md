@@ -234,7 +234,7 @@ Al utilizar arquitectura Cloud para Hadoop la fase de staging se reduce a la sub
 
 Muestro a continuación una imagen donde se ve como quedan subidos los diferentes archivos csv en mi segmento del Cloud Storage. 
 
-- [Segmento Cloud Storage](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Segmento_Cloud_Storage.png)
+![Segmento](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Segmento_Cloud_Storage.png)
 
 *Realizar la tarea de procesamiento de datos sobre los datos extraídos utilizando WordCount*
 
