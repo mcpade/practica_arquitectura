@@ -238,7 +238,35 @@ Muestro a continuación una imagen donde se ve como quedan subidos los diferente
 
 *Realizar la tarea de procesamiento de datos sobre los datos extraídos utilizando WordCount*
 
-(PENDIENTE)
+En este punto es donde habría que procesar los datos para obtener el dato que queremos que es el de la estimación de precios. Dado que aun no hemos pasado por el módulo de procesamiento voy a realizar un proceso sencillo como es el WordCount de uno de los ficheros subidos al Cloud Storage. En concreto uso el fichero de airbnb.csv y el resultado lo guardo en una carpeta ouput que creo dentro del segmento. Muestro a continuación los pasos y el resultado final
+
+#### Paso 1
+
+En el menú de GCP buscamos la opción Dataproc y entramos en Tareas
+
+![Paso_1_Wordcount](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_1_Wordcount.png)
+
+#### Paso 2
+
+Paso a crear la tarea, para ello damos a ENVIAR TAREA
+
+![Paso_2_Wordcount](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_2_Wordcount.png)
+
+Y rellenamos los datos de la Tarea:
+
+ID de tarea: WordCount_Airbnb
+
+Region: europe-west1 (la región donde tengamos nuestro cluster)
+
+Clúster: escogemos el clúster creado
+
+Tipo de tarea: Hadoop
+
+Clase principal o jar: file:////usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar 
+
+Argumentos:   wordcount 
+              gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/airbnb.csv   (fichero que está en el Google                                                                                               Storage)
+              gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/output/airbnb_result    (resultado)
 
 ## Parte 5
 
