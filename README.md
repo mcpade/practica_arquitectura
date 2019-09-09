@@ -102,7 +102,7 @@ En principio para la prática me quedaré solo con las 32 primeras noticias
 
 ### Colaboratory 3. API de la EMT de Madrid
 
-Mediante el siguiente código en Python hago consultas a la API de la EMT de Madrid para conocer datos de aparcamientos municipales. Como resultado tendré un archivo "Parkings.csv" que contendrá los siguientes datos de cada aparcamiento: nombre, código postal, coordenadas geográficas y dirección
+Mediante el siguiente código en Python hago consultas a la API de la EMT de Madrid para conocer datos de aparcamientos municipales. Como resultado tendré un archivo "Parkings.csv" que contendrá los siguientes datos de cada aparcamiento: id, nombre, código postal, coordenadas geográficas y dirección
 
 - [Ver Codigo](https://colab.research.google.com/drive/1tlLzm6tJhjdMsp1QP98ArnjjmKL67ey8)
 
@@ -326,8 +326,23 @@ Una vez dentro del cliente voy a crear las tablas con los campos necesarios para
 
 actividades.csv
 
-`CREATE TABLE actividades (id INT, Fecha_inic TIMESTAMP, Fecha_fin TIMESTAMP, Titulo STRING, Descripcion STRING, Dist
-rito STRING, Latitud FLOAT, Longitud FLOAT) ROW FORMAT DELIMITED FIELDS TERMINATED BY ';';`
+`CREATE TABLE actividades (id INT, Fecha_inic TIMESTAMP, Fecha_fin TIMESTAMP, Titulo STRING, Descripcion STRING, Distrito STRING, Latitud FLOAT, Longitud FLOAT) ROW FORMAT DELIMITED FIELDS TERMINATED BY ';';`
+
+monumentos.csv
+
+`CREATE TABLE monumentos (id INT, Titulo STRING, Barrio STRING, Distrito STRING, CP INT, Direccion STRING, Latitud FLOAT, Lontitud FLOAT, Descripcion STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY ';';`
+
+museos.csv
+
+`CREATE TABLE museos (id INT, Titulo STRING, Barrio STRING, Distrito STRING, CP INT, Direccion STRING, Latitud FLOAT, Lontitud FLOAT, Descripcion STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY ';';`
+
+parking.csv
+
+`CREATE TABLE parking (id INT, Nombre STRING, CP INT, Coordenadas STRING, Direccion STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY ';';`
+
+datanoticias.csv
+
+
 
 
 
