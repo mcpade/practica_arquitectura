@@ -301,7 +301,29 @@ El mismo procesamiento lo puedo realizar para el resto de ficheros .csv
 
 *Utilizar HIVE para insertar los datos extraídos durante el Sprint 2 y realizar queries con los mismos. Indicar los pasos y las decisiones de diseño respecto a cómo organizar los datos.*
 
-(PENDIENTE)
+GCP Dataproc ya viene con HIVE instalado, configurado y en ejecución. Solo hay que añadir el puerto sobre el que va HIVE (que es el 10000) a la regla de cortafuegos. Esto ya lo hice en la Parte 3 de la práctica, Paso 5. Cuando abrí los puertos para HADOOP también añadí el 10000 para HIVE
+
+La idea para el diseño sería generar en HIVE unas tablas a las que volcar el contenido de los .csv extraidos (que ahora tenemos en el Cloud Storage), para posteriormente poder realizar queries sobre ellos. Antes de realizar esa carga los ficheros tendrían que estar limpios. Este es un paso que no se ha realizado y que se comentó al principio de la práctica que se tendría que realizar antes de proceder a subirlos al Cloud Storage. Supongo para la práctica que tengo los ficheros ya limpios (es algo que se verá en el módulo de procesamiento).
+
+#### Paso 1
+
+Lo primero que voy a hacer es entrar por SSH desde GCP en la máquina con HIVE y lanzar el cliente beeline. Para ello entro en el clúster y me voy a Instancias de VM. Junto a la máquina Master sale un enlace SSH que nos abre una consola con la que tenemos acceso a esa máquina
+
+
+![Paso_1_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_1_HIVE.png)
+
+![Paso_1b_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_1b_HIVE.png)
+
+Para lanzar el cliente beeline ejecuto
+
+`beeline -u jdbc:hive2://localhost:10000`
+
+![Paso_1c_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_1c_HIVE.png)
+
+#### Paso 2
+
+Una vez dentro del cliente voy a crear las tablas con los campos necesarios para cada uno de los .csv que tengo como datos de entrada.
+
 
 
 
