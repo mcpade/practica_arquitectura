@@ -264,14 +264,26 @@ Tipo de tarea: Hadoop
 
 Clase principal o jar: file:////usr/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar 
 
-Argumentos:   wordcount 
+Argumentos:  
 
-              gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/airbnb.csv   (fichero que está en el Google                                                                                               Storage)
+  wordcount 
+
+  gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/airbnb.csv   (fichero que está en el Google                                                                                               Storage)
               
-              gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/output/airbnb_result    (resultado)
+  gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/output/airbnb_result    (resultado)
               
 ![Paso_2b_Wordcount](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_2b_Wordcount.png)              
-              
+![Paso_2c_Wordcount](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_2c_Wordcount.png)   
+
+#### Paso 3
+
+Podemos ver que el resultado obtenido se ha guardado en la carpeta airbnb_result dentro de la carpeta output en el segmento del Cloud Storage
+
+![Paso_3_Wordcount](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3_Wordcount.png)
+
+
+
+
 
 ## Parte 5
 
