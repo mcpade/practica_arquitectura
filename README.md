@@ -381,6 +381,16 @@ A continuación habría que cargar el contenido de los .csv en las tablas creada
 
 ![Paso_3f_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3d_HIVE.png)
 
+#### Paso 4
+
+Una vez que ya tengo todos los datos introducidos se pueden realizar consultas. Por ejemplo supongamos que la vivienda para la que queremos calcular la estimación de precios está en el distrito de "Retiro" podemos lanzar consultas a las tablas para ver la actividades que hay previstas en ese distrito o las noticias recientes:
+
+`SELECT d.titular, d.distrito FROM datanoticias d where d.distrito='RETIRO';`
+
+`SELECT a.titulo  FROM actividades a where a.distrito='Retiro';`
+
+
+
 
 
 
