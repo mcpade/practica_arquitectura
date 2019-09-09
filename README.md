@@ -324,6 +324,11 @@ Para lanzar el cliente beeline ejecuto
 
 Una vez dentro del cliente voy a crear las tablas con los campos necesarios para cada uno de los .csv que tengo como datos de entrada.
 
+actividades.csv
+
+`CREATE TABLE actividades (id INT, Fecha_inic TIMESTAMP, Fecha_fin TIMESTAMP, Titulo STRING, Descripcion STRING, Dist
+rito STRING, Latitud FLOAT, Longitud FLOAT) ROW FORMAT DELIMITED FIELDS TERMINATED BY ';';`
+
 
 
 
