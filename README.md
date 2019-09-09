@@ -230,11 +230,11 @@ http://IP_externa_master:9870
 
 *Subir los archivos extraídos durante la parte 2 al cluster de Hadoop e insertarlos en el HDFS. Indicar pasos necesarios para realizar esto, dependiendo de la opción elegida en el Sprint 3*
 
-Al utilizar arquitectura Cloud para Hadoop la fase de staging se reduce a la subida de datos a un segmento de Cloud Storage. En esta práctica dentro de los propios Colaboratory  que se usan para extraer los datos se termina subiendo al Cloud Storage de Google usando la API de Python (se pueden consultar en la Parte 2)
+Al utilizar arquitectura Cloud para Hadoop la fase de staging se reduce a la subida de datos a un segmento de Cloud Storage. Al crear el cluster en GCP automáticamente se crea un Storage Segment y los ficheros subidos a él estarán disponibles para ejecutar jar o cargar datos en hdfs. En esta práctica dentro de los propios Colaboratory  que se usan para extraer los datos se termina subiendo al Cloud Storage de Google usando la API de Python (se pueden consultar en la Parte 2)
 
-Muestro a continuación una imagen donde se ve como quedan subidos los diferentes archivos csv en mi segmento del Cloud Storage. También está subida en este repositorio
+Muestro a continuación una imagen donde se ve como quedan subidos los diferentes archivos csv en mi segmento del Cloud Storage. 
 
-- [Segmento Cloud Storage](https://drive.google.com/file/d/1j3wOPOMKehYlUeEn-KJjBsEkkaXNhw8O/view?usp=sharing)
+- [Segmento Cloud Storage](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Segemento_Cloud_Storage.png)
 
 *Realizar la tarea de procesamiento de datos sobre los datos extraídos utilizando WordCount*
 
