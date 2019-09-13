@@ -64,7 +64,7 @@ Los ficheros csv que se vayan obteniendo se cargarán en un segmento del Cloud S
 
 ### Carga de datos en Hadoop - Staging
 
-Al utilizar Hadoop en Cloud y el Cloud Storage, la fase de Staging queda reducida únicamente a subir los ficheros csv al Cloud Storage. Los mismos scripts de Python que obtienen los datos se encargarán en esta práctica de guardarlos en el Cloud Storage y ya estará disponibles para HADOOP.
+Al utilizar Hadoop en Cloud y el Cloud Storage, la fase de Staging queda reducida únicamente a subir los ficheros csv al Cloud Storage. Los mismos scripts de Python que obtienen los datos se encargarán en esta práctica de guardarlos en el Cloud Storage y ya estarán disponibles para HADOOP.
 
 Para un proyecto final habría que meter una fase más antes de la carga de los ficheros en el Cloud Storage. Esta fase sería la de limpieza datos de forma que una vez estén subidos a HADDOP ya tengamos estos ficheros en los formatos adecuados y perfectamente preparados para el procesamiento.
 
