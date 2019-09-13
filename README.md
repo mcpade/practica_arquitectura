@@ -178,7 +178,7 @@ Tras esto ya podré ver mi cluster creado:
 
 #### Paso 5
 
-A continuación voy a crear las reglas de cortafuegos o firewall. GCP funciona a través de los puertos 8088 y 8970 (voy a abrir ya de camino también el 10000 para HIVE que usaré posteriormente
+A continuación voy a crear las reglas de cortafuegos o firewall. GCP funciona a través de los puertos 8088 y 8970 (voy a abrir ya de camino también el 10000 para HIVE que usaré posteriormente)
 
 En el menú de GCP buscamos la opción Red de VPC y entramos en Reglas de cortafuegos
 
