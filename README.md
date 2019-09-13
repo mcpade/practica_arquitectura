@@ -386,7 +386,7 @@ A continuación habría que cargar el contenido de los .csv en las tablas creada
 
 `LOAD DATA INPATH 'gs://dataproc-fe7b85fd-43dc-4de0-a520-a824fcd432de-europe-west1/airbnb.csv' OVERWRITE INTO TABLE airbnb;`
 
-![Paso_3f_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3d_HIVE.png)
+![Paso_3f_HIVE](https://raw.githubusercontent.com/mcpade/practica_arquitectura/master/Paso_3f_HIVE.png)
 
 #### Paso 4
 
