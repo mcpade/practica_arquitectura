@@ -245,7 +245,7 @@ Muestro a continuación una imagen donde se ve como quedan subidos los diferente
 
 *Realizar la tarea de procesamiento de datos sobre los datos extraídos utilizando WordCount*
 
-En este punto es donde habría que procesar los datos para obtener el dato que queremos que es el de la estimación de precios. Dado que aun no hemos pasado por el módulo de procesamiento voy a realizar un proceso sencillo como es el WordCount de uno de los ficheros subidos al Cloud Storage. En concreto uso el fichero de airbnb.csv y el resultado lo guardo en una carpeta ouput que creo dentro del segmento. Muestro a continuación los pasos y el resultado final
+En este punto es donde habría que procesar los datos para obtener el dato que queremos que es el de la estimación de precios. Dado que aun no hemos pasado por el módulo de procesamiento voy a realizar un proceso sencillo como es el WordCount de los ficheros subidos al Cloud Storage. Los resultados los guardo en una carpeta ouput que creo dentro del segmento. Muestro a continuación los pasos y el resultado final
 
 #### Paso 1
 
