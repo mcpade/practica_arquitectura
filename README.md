@@ -1,4 +1,4 @@
-# Big Data Architecture. Práctica
+# Big Data Architecture. Práctica - Maria Araceli Paredes Delgado
 
 ## Enunciado
 
