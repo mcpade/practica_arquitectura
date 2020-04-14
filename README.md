@@ -94,7 +94,9 @@ El Dataset de Airbnb lo tenemos en esta dirección [Airbnb](https://public.opend
 
 Podemos escoger entre bajarnos una versión resumida de 14.780 registros o el dataset completo. Para esta práctica voy a utilizar la versión reducida. Podemos bajarnos el archivo directamente desde este enlace y luego subirlo al Cloud Storage. De cara a una automatización en el futuro el código python para bajarse este archivo se muestra en este Colaboratory: 
 
-- [Ver Código](https://colab.research.google.com/drive/1kcGH65fr6VqOjbSucdFaLpxjiC_dzzM5)
+- [Ver Código](https://github.com/mcpade/practica_arquitectura/blob/master/code/Airbnb%20Download.ipynb)
+
+(https://colab.research.google.com/drive/1kcGH65fr6VqOjbSucdFaLpxjiC_dzzM5)
 
 
 ### Colaboratory 2. Crawling Noticas Locales Madrid
