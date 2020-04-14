@@ -96,7 +96,6 @@ Podemos escoger entre bajarnos una versión resumida de 14.780 registros o el da
 
 - [Ver Código](https://github.com/mcpade/practica_arquitectura/blob/master/code/Airbnb%20Download.ipynb)
 
-(https://colab.research.google.com/drive/1kcGH65fr6VqOjbSucdFaLpxjiC_dzzM5)
 
 
 ### Colaboratory 2. Crawling Noticas Locales Madrid
