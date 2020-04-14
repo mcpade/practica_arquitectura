@@ -103,7 +103,8 @@ Podemos escoger entre bajarnos una versión resumida de 14.780 registros o el da
 Mediante el siguiente código en Python voy a realizar un Crawling de una página de noticias locales de Madrid. Como resultado tendré un archivo "datanoticias.csv" que contendrá los siguientes datos de las noticias: fecha, distrito, titular.
 En principio para la prática me quedaré solo con las 32 primeras noticias
 
-- [Ver Código](https://colab.research.google.com/drive/1EoVTmGQbznHsgctedHsgZDgowXDXx1Px)
+- [Ver Código](https://github.com/mcpade/practica_arquitectura/blob/master/code/Crawling%20-%20Noticias%20locales.ipynb)
+
 
 ### Colaboratory 3. API de la EMT de Madrid
 
