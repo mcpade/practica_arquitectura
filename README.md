@@ -110,7 +110,8 @@ En principio para la prática me quedaré solo con las 32 primeras noticias
 
 Mediante el siguiente código en Python hago consultas a la API de la EMT de Madrid para conocer datos de aparcamientos municipales. Como resultado tendré un archivo "Parkings.csv" que contendrá los siguientes datos de cada aparcamiento: id, nombre, código postal, coordenadas geográficas y dirección
 
-- [Ver Codigo](https://colab.research.google.com/drive/1tlLzm6tJhjdMsp1QP98ArnjjmKL67ey8)
+- [Ver Codigo](https://github.com/mcpade/practica_arquitectura/blob/master/code/Scraping%20-%20API%20de%20la%20EMT%20de%20Madrid.ipynb)
+
 
 ### Collaboratory 4. API Datos Abiertos de Madrid
 
