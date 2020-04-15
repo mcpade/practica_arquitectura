@@ -1,6 +1,10 @@
-# Big Data Architecture. Práctica - María Araceli Paredes Delgado 
+# Práctica: Módulo Big Data Architecture. - Bootcamp KeepCoding - BIG DATA & MACHINE LEARNING
+### María Araceli Paredes Delgado 
+
+# Big Data Architecture
 
 ## Enunciado
+
 
 *Diseñar, especificar y desplegar un datalake para el procesamiento de datos provenientes de fuentes de datos no estructurados extraídos mediante técnicas de scraping/crawling de sitios de dominio público.*
 
